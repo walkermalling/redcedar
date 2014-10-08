@@ -1,0 +1,6 @@
+node_modules/
+app/bower_components/
+build/
+test/
+db/
+.DS_Store
