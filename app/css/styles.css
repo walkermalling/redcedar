@@ -1,0 +1,314 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+php&plugins=autolinker */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em; }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822; }
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray; }
+
+.token.punctuation {
+  color: #f8f8f2; }
+
+.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672; }
+
+.token.boolean,
+.token.number {
+  color: #ae81ff; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2; }
+
+.token.atrule,
+.token.attr-value {
+  color: #e6db74; }
+
+.token.keyword {
+  color: #66d9ef; }
+
+.token.regex,
+.token.important {
+  color: #fd971f; }
+
+.token.important {
+  font-weight: bold; }
+
+.token.entity {
+  cursor: help; }
+
+.token a {
+  color: inherit; }
+
+/*  peach: f0b49e;  cream: e5fcc2;  sea: 7bbec4;  pop-orange: f26c66;
+  pop-green: 9de0ad;  charcoal: 323131;  brown: 594f4f; */
+html {
+  height: 100%;
+  background: #252523;
+  color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: .95em; }
+
+body {
+  min-width: 650px; }
+
+div {
+  position: relative; }
+
+a {
+  color: #FDEDEC;
+  color: #dbcccc;
+  cursor: pointer;
+  text-decoration: none; }
+
+ul li p {
+  font-size: 100%; }
+
+span.code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  background: #2b2b2b;
+  border-radius: 2px; }
+
+a:hover {
+  color: #fff; }
+
+header, main, footer {
+  width: 100%;
+  margin: 0; }
+
+section {
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative; }
+
+header {
+  position: relative;
+  padding: 9em 0 0 0;
+  background-image: url(/img/pixelated-background.jpg);
+  background-size: cover;
+  background-position: center 43%; }
+
+nav {
+  display: block;
+  box-sizing: border-box;
+  text-align: right;
+  padding: 1.5em 0 0.5em 0; }
+
+nav .left {
+  position: absolute;
+  bottom: 36px;
+  left: 20px;
+  text-align: left;
+  width: 49%; }
+
+nav h1 {
+  font-size: 3em; }
+
+h1 span.s1 {
+  color: #B3A3A2; }
+
+h1 span.s2 {
+  color: #BC9C9A; }
+
+h1 span.s3 {
+  color: #C49492; }
+
+h1 span.s4 {
+  color: #CD8D89; }
+
+h1 span.s5 {
+  color: #D58581; }
+
+h1 span.s6 {
+  color: #DD7D78; }
+
+h1 span.s7 {
+  color: #E67670; }
+
+h1 span.s8 {
+  color: #F26C66; }
+
+nav .right {
+  position: absolute;
+  bottom: 36px;
+  right: 20px;
+  text-align: right;
+  width: 50%; }
+
+nav .right > a {
+  display: inline-block;
+  padding: .3em 1em;
+  font-size: 1.2em;
+  border-radius: 2px 2px 0 0; }
+
+nav .right > a:last-child {
+  padding-right: 0; }
+
+nav .right > a.active {
+  color: #fff; }
+
+#sub-nav {
+  padding: 0;
+  text-align: right;
+  line-height: 36px;
+  z-index: 10; }
+
+#sub-nav a {
+  display: inline-block;
+  padding-left: 30px; }
+
+header #scrim {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(30, 28, 29, 0.4);
+  height: 36px; }
+
+main {
+  padding: 3em 0;
+  background: #363432; }
+
+main h2 {
+  color: #000;
+  font-size: 2em;
+  font-weight: 300;
+  padding: 1em 0; }
+
+main article {
+  width: 48em;
+  padding: .2em 0 1em 0; }
+
+article h3 {
+  color: #D58581;
+  padding: .5em 0;
+  font-size: 1.2em; }
+
+article h4 {
+  color: #D58581;
+  color: #000;
+  padding: 1em 0 .3em 0;
+  font-size: 1em; }
+
+article ul li {
+  padding-left: 15px; }
+
+article p {
+  line-height: 1.5em;
+  padding: .45em 0;
+  font-size: 1.2em;
+  color: #FDEDEC; }
+
+article strong {
+  color: #dbcccc;
+  font-weight: 400; }
+
+article span.date {
+  font-style: italic;
+  color: #000; }
+
+article a {
+  color: #DD7D78; }
+
+article a:hover {
+  color: #F26C66; }
+
+article pre.language-javascript {
+  background: #363432;
+  padding: 0; }
+
+footer {
+  min-height: 300px; }
+
+/*# sourceMappingURL=styles.css.map */

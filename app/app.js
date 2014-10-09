@@ -1,16 +1,11 @@
 'use strict';
 
-/**
- * This file configures the main angular module, 'purlieu'
- * and registers Services, Models, Controllers, Directives & Routes
- */
-
 require('angular/angular');
 require('angular-route');
 require('angular-cookies');
 require('angular-base64');
 
-var purlieu = angular.module('purlieu', [
+var redcedar = angular.module('redcedar', [
   'ngRoute',
   'base64',
   'ngCookies'
@@ -21,18 +16,32 @@ var purlieu = angular.module('purlieu', [
 // Models
 
 // Controllers
+require('./js/controllers/main-controller')(redcedar);
+require('./js/controllers/home-controller')(redcedar);
+require('./js/controllers/logs-controller')(redcedar);
 
 // Directives
 
 // Routes
 
-purlieu.config([ '$routeProvider', function($routeProvider) {
+redcedar.config([ '$routeProvider', function($routeProvider) {
     $routeProvider
-      .when('/home', {
-        templateUrl: 'views/home-view.html'
+      .when('/', {
+        templateUrl: 'views/home-view.html',
+        controller: 'homeController'
+      })
+      .when('/logs', {
+        templateUrl: 'views/logs-view.html',
+        controller: 'logsController'
+      })
+      .when('/portfolio', {
+        templateUrl: 'views/portfolio-view.html',
+      })
+      .when('/etc', {
+        templateUrl: 'views/etc-view.html',
       })
       .otherwise({
-        redirectTo: '/home'
+        redirectTo: '/'
       });
 
 } ]);

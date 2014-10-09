@@ -27,7 +27,12 @@ module.exports = function(grunt) {
         cwd: 'app/',
         src: [
           '*.html',
-          'css/*.css'
+          'css/*.css',
+          'css/scss/styles.css.map',
+          'img/*.jpg',
+          'img/*.png',
+          'views/**/*.html',
+          'templates/**/*.html'
         ],
         dest: 'build/',
         filter: 'isFile'
@@ -59,7 +64,10 @@ module.exports = function(grunt) {
       build: {
         files: {
           'app/css/styles.css': 'app/css/scss/styles.scss'
-        }
+        },
+        options: {
+          sourcemap: false
+        }        
       }
     },
 
@@ -76,6 +84,7 @@ module.exports = function(grunt) {
       express: {
         files: [
           'app/js/**/*.js',
+          'app/app.js',
           'app/index.html',
           'app/views/**/*.html',
           'app/css/scss/*.scss',
@@ -86,7 +95,6 @@ module.exports = function(grunt) {
         ],
         tasks: [
           'jshint',
-          'jscs',
           'sass',
           'clean:dev',
           'browserify:dev',

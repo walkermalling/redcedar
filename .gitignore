@@ -4,3 +4,4 @@ build/
 test/
 db/
 .DS_Store
+.sass-cache/
