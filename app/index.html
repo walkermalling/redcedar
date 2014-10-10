@@ -9,12 +9,12 @@
 </head>
 <body data-ng-controller="mainController">
 
-  <header>
+  <header class="{{ page }}">
     <section>
       <nav>
         <div class="left">
           <h1>
-            <a href="/" data-ng-click="page = home" data-ng-class="{active:isActive('/')}">
+            <a href="/" data-ng-class="{active:isActive('/')}">
               <span class="s1">R</span>
               <span class="s2">e</span>
               <span class="s3">d</span>
@@ -27,22 +27,29 @@
           </h1>
         </div>
         <div class="right">
-          <a href="/#/logs" data-ng-click="page = 'logs'" data-ng-class="{active:isActive('/logs')}">Logs</a>
-          <a href="/#/portfolio" data-ng-click="page = 'portfolio'" data-ng-class="{active:isActive('/portfolio')}">Portfolio</a>
-          <a href="/#/etc" data-ng-click="page = 'etc'" data-ng-class="{active:isActive('/etc')}">Etc</a>
+          <a href="/#/logs" data-ng-class="{active:isActive('/logs')}">Logs</a>
+          <a href="/#/portfolio" data-ng-class="{active:isActive('/portfolio')}">Portfolio</a>
+          <a href="/#/etc" data-ng-class="{active:isActive('/etc')}">Etc</a>
         </div>
       </nav>
       <div id="sub-nav">
-        <div data-ng-show="isActive('/')"></div>
+        <div data-ng-show="isActive('/')">
+          <h2 class="left">Home</h2>
+          <span>Welcome!</span>
+        </div>
         <div data-ng-show="isActive('/logs')">
+          <h2 class="left">The Logs</h2>
           <a href="">Whiteboard</a>
-          <a href="">Review</a>
+          <a href="">Reviews</a>
+          <a href="">Tutorials</a>
         </div>
         <div data-ng-show="isActive('/portfolio')">
+          <h2 class="left">My Portfolio</h2>
           <a href="">Lamp</a>
           <a href="">Mean</a>
         </div>
         <div data-ng-show="isActive('/etc')">
+          <h2 class="left">&amp;c.</h2>
           <a href="">Contact</a>
           <a href="">Resume</a>
         </div>

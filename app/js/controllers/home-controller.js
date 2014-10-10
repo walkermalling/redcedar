@@ -1,13 +1,10 @@
 'use strict';
 
-/**
- * Handle log-in and the creation of new accounts
- */
-
 module.exports = function(app) {
-  app.controller('homeController', [ '$scope', function($scope) {
+  app.controller('homeController', [ '$scope', '$rootScope', 
+    function($scope, $rootScope) {
       
-      $scope.message = 'home controller message';
+      $rootScope.page = 'home';
       
 
     }

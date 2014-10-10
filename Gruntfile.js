@@ -28,7 +28,7 @@ module.exports = function(grunt) {
         src: [
           '*.html',
           'css/*.css',
-          'css/scss/styles.css.map',
+          'css/styles.css.map',
           'img/*.jpg',
           'img/*.png',
           'views/**/*.html',
@@ -66,7 +66,7 @@ module.exports = function(grunt) {
           'app/css/styles.css': 'app/css/scss/styles.scss'
         },
         options: {
-          sourcemap: false
+          sourcemap: true
         }        
       }
     },

@@ -1,15 +1,19 @@
 'use strict';
 
-/**
- * Handle log-in and the creation of new accounts
- */
-
 module.exports = function(app) {
-  app.controller('logsController', [ '$scope', function($scope) {
+  app.controller('logsController', [ '$scope', '$rootScope', function($scope, $rootScope) {
       
-      $scope.message = 'blog controller message';
+      $rootScope.page = 'logs';
 
       Prism.highlightAll(); /* jshint ignore:line*/
+
+      $scope.tutorial = true;
+      $scope.whiteboard = false;
+      $scope.review = false;
+
+      $scope.$watch('whiteboard',function(){
+        console.log($scope.whiteboard);
+      });
 
     }
   ]);
