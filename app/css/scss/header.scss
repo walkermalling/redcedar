@@ -1,0 +1,97 @@
+header, main, footer{
+    width:100%;
+    margin:0;
+  }
+  section{
+    box-sizing:border-box;
+    padding:0 20px;
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+    position:relative;
+  }
+  header{
+    position:relative;
+    padding:9em 0 0 0;
+    background-image:url(/img/pixelated-background.jpg);
+    background-size:cover;
+    background-position:center 43%;
+  } 
+    header.logs{
+      background-image:url(/img/logs4.jpg);
+      background-position:center 50%;
+    }
+    nav{
+      display:block;
+      box-sizing:border-box;
+      text-align: right;
+      padding:1.5em 0 0.5em 0;
+    }
+
+    nav .left{
+      position:absolute;
+      bottom:36px; left:20px;
+      text-align:left; width:49%;
+    }
+      nav h1{
+        font-size:3em;
+      }
+        h1 span.s1{ color:#B3A3A2;}
+        h1 span.s2{ color:#BC9C9A;}
+        h1 span.s3{ color:#C49492;}
+        h1 span.s4{ color:#CD8D89;}
+        h1 span.s5{ color:#D58581;}
+        h1 span.s6{ color:#DD7D78;}
+        h1 span.s7{ color:#E67670;}
+        h1 span.s8{ color:#F26C66;}
+
+/*      header.logs nav h1 span.s1{color:#C49492;}
+      header.logs nav h1 span.s2{color:#C49492;}
+      header.logs nav h1 span.s3{color:#C49492;}
+      header.logs nav h1 span.s4{color:#C49492;}
+      header.logs nav h1 span.s5{color:#C49492;}
+      header.logs nav h1 span.s6{color:#DD7D78;}
+      header.logs nav h1 span.s7{color:#E67670;}
+      header.logs nav h1 span.s8{color:#DD7D78;}*/
+
+    nav .right{
+      position:absolute;
+      bottom:36px; right:20px;
+      text-align:right; width:50%;
+    }
+    nav .right > a {
+        display:inline-block;
+        padding:.3em 1em;
+        font-size:1.2em;
+        border-radius: 2px 2px 0 0;
+      }
+        nav .right > a:last-child{
+          padding-right:0;
+        }
+        nav .right > a.active{
+          color:#fff;
+        }
+    
+    
+      #sub-nav{
+        padding: 0;
+        text-align: right;
+        line-height:36px;
+        z-index:10;
+      }
+        #sub-nav h2.left{
+          text-align:left;
+          display:inline;
+          float:left;
+        }
+        #sub-nav a {
+          display:inline-block;
+          padding-left:30px;
+        }
+      
+      header #scrim{
+        position:absolute;
+        bottom:0; left:0; right:0;
+        background:rgba(30,28,29,.4);
+        height:36px;
+      }

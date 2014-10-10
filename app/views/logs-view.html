@@ -1,0 +1,105 @@
+<main>
+  
+  <section>
+    <h2 data-ng-click="tutorial = !tutorial">
+      <a>Tutorials <span data-ng-show="!tutorial">...</span></a>
+    </h2>
+    <article data-ng-show="tutorial">
+      <h3>Data Driven Documents, a.k.a, D3</h3>
+      <p>I’ve had a few run-ins with the d3.js library recently. It has been very rewarding, but what they say about D3 is true: there is a bit of a learning curve.</p>
+      <p>Here's is how I would approach learning it, if I had it to do over again.</p>
+      <h4>The Best Tutorials</h4>
+      <p>The first thing to know is that the author's tutorials are the best ones. Mike Bostock created d3 (with Jeff Heer and Vadim Ogievetsky).  He maintains the library, and often answers questions and issues reported on StackOverflow.  He wrote the first 9 tutorials on the d3 site, introducing the core concepts.  Cut your teeth on these.  Why?  Not because they are the official ones, but because in the case of D3 there seems to be an unusually large proportion of bad third-party tutorials out there.</p>
+      <h4>The Data Join Process</h4>
+      <p>If you are a developer and can walker the DOM in your sleep, your first lesson is in D3 is to unlearn the patterns you’re probably used to when it comes to selectors and manipulators. The central process of Data Driven Documents is the data join, which binds an incoming set of data to a target selection in the DOM.</p>
+
+      <pre>
+        <code class="language-javascript">
+          d3.selectAll('div')   // the selection
+            .data([1,2,3,4,5])  // the data join
+            .enter()            // the entering sub-selection
+            .append()           // app the chained sub-selection
+        </code>
+      </pre>
+
+      <p>The <span class="code">.enter()</span> method returns a sub-selection of <span class="code">.selectAll()</span>. Specifically, it returns the sub-set of data that does not already have representation in the DOM (by representation I mean corresponding element, in this case a div).</p>
+
+      <p>Once you have the sub-selection of new data, call <span class="code">.append()</span> and corresponding elements will be inserted into the DOM.</p>
+
+      <p>You use the same pattern to remove data.  Here are more realisitc instructions:</p>
+
+      <pre>
+        <code class="language-javascript">
+          var selection = d3.selectAll('div') 
+            .data([1,2,3,4,5]);
+
+          selection
+            .enter()
+            .append();
+
+          selection
+            .exit()
+            .remove();
+        </code>
+      </pre>
+
+      <p>We cash the selection and then get the entering and exiting sub-selections to append and remove the elements, respectively.</p>
+
+      <p>The big hiccup of this powerful pattern is putting your mind to rest about that initial <span class="code">.selectAll('div')</span>, because when you perform your first data join, <em>it isn't actually selecting any DOM elements</em>.  How could it?  There aren't any divs in the DOM yet when you first run this code.</p>
+      <p>I think of it as <em>staking a claim on a selection</em>.  The <span class="code">.selectAll()</span> claims selection scope for the join, and when we <span class="code">.remove()</span> or <span class="code">.append()</span> we will be removing and appending divs within that scope.  The selection itself will change, but the scope will remain the same.</p>
+
+    </article>
+  </section>
+
+  <section>
+    <h2 data-ng-click="whiteboard = !whiteboard">
+      <a>Whiteboard <span data-ng-show="!whiteboard">...</span></a>
+    </h2>
+    <article data-ng-show="whiteboard">
+      <h3>The Staris Combo Problem</h3>
+      <p>I really enjoyed this one.  The problem is as follows.</p>
+      <p>A child is running up a staircase with n steps, and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count how many possibilities the child can run up the stairs</p>
+      <p>Here is my basic solution.  You can find it <a href="https://github.com/walkermalling/whiteboard/tree/master/src/stairs-combo">here</a>, with tests.</p>
+      <pre>
+        <code class="language-javascript">
+          var n = 5;
+          var recurse = function(stairsLeft) {
+            var solutions = 0, s = stairsLeft;
+              for(var k = 3; k > 0; k--){
+                if(s-k===0) solutions += 1;
+                else if (s-k>0) solutions += recurse(s-k);
+              }
+              return solutions;
+          };
+
+          recurse(n);
+        </code>
+      </pre>
+      <p>The book's solution:</p>
+      <pre>
+        <code class="language-javascript">
+          var countWays = function(n) { 
+            if(n < 0){
+              return 0;
+            } else if (n === 0){
+              return 1;
+            } else {
+              return this.countWays(n - 1) 
+                + this.countWays(n -2) 
+                + this.countWays(n - 3);
+            }
+          };
+        </code>
+      </pre>
+    </article>
+  </section>
+
+  <section>
+    <h2 data-ng-click="review = !review">
+      <a>Reviews <span data-ng-show="!review">...</span></a>
+    </h2>
+    <article data-ng-show="review">
+      
+    </article>
+  </section>
+</main>
