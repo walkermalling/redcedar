@@ -174,7 +174,7 @@ main h2 a {
   color: #000; }
 
 main h2 a:hover {
-  color: #111; }
+  color: #222; }
 
 main article {
   width: 48em;
@@ -233,13 +233,17 @@ section {
 header {
   position: relative;
   padding: 9em 0 0 0;
-  background-image: url(/img/pixelated-background.jpg);
+  background-image: url(/img/treelight.jpg);
   background-size: cover;
   background-position: center 43%; }
 
 header.logs {
-  background-image: url(/img/logs4.jpg);
+  background-image: url(/img/logs.jpg);
   background-position: center 50%; }
+
+header.portfolio {
+  background-image: url(/img/treelight-vibrant.jpg);
+  background-position: center 43%; }
 
 nav {
   display: block;
@@ -330,5 +334,8 @@ header #scrim {
   right: 0;
   background: rgba(30, 28, 29, 0.4);
   height: 36px; }
+
+footer {
+  min-height: 300px; }
 
 /*# sourceMappingURL=styles.css.map */

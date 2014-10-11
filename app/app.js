@@ -19,6 +19,8 @@ var redcedar = angular.module('redcedar', [
 require('./js/controllers/main-controller')(redcedar);
 require('./js/controllers/home-controller')(redcedar);
 require('./js/controllers/logs-controller')(redcedar);
+require('./js/controllers/portfolio-controller')(redcedar);
+require('./js/controllers/etc-controller')(redcedar);
 
 // Directives
 
@@ -36,9 +38,11 @@ redcedar.config([ '$routeProvider', function($routeProvider) {
       })
       .when('/portfolio', {
         templateUrl: 'views/portfolio-view.html',
+        controller: 'portfolioController'
       })
       .when('/etc', {
         templateUrl: 'views/etc-view.html',
+        controller: 'etcController'
       })
       .otherwise({
         redirectTo: '/'
