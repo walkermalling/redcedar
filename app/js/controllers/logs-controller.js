@@ -7,14 +7,6 @@ module.exports = function(app) {
 
       Prism.highlightAll(); /* jshint ignore:line*/
 
-      $scope.tutorial = true;
-      $scope.whiteboard = false;
-      $scope.review = false;
-
-      $scope.$watch('whiteboard',function(){
-        console.log($scope.whiteboard);
-      });
-
     }
   ]);
 };

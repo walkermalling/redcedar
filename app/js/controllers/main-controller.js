@@ -5,9 +5,15 @@ module.exports = function(app) {
     function($scope, $location, $rootScope) {
 
       $rootScope.page = 'home';
+      $rootScope.focus = null;
 
       $scope.isActive = function(route) {
         return route === $location.path();
+      };
+
+      $scope.setFocus = function(id){
+        $rootScope.focus = id;
+        document.getElementById(id).scrollIntoView();
       };
 
     }

@@ -1,0 +1,60 @@
+article.portfolio ul li{
+  float:left;
+  display:block;
+  padding:0 0 30px 0;
+  width:300px;
+  overflow:hidden;
+}
+article.portfolio ul li:nth-child(odd){
+  clear:left;
+  padding-right:50px;
+}
+
+article.portfolio ul li a{
+  font-size:1.4em;
+}
+
+article.portfolio span.tech{
+  text-transform: uppercase;
+  color:#E67670;
+  background:#141414;
+  border-radius:2px;
+  padding:0 2px;
+  font-size: .8em;
+}
+
+li div.ss{
+  box-sizing:border-box;
+  width:300px;
+  height:115px;
+  background-position:top left;
+  background-size:100%;
+  background-repeat:no-repeat;
+  margin-bottom:15px;
+  border-radius:2px;
+}
+li div.ss.sextant{
+  background-image:url(/img/ss_sextant.jpg);
+}
+li div.ss.rmi{
+  background-image:url(/img/ss_rmi.jpg);
+}
+li div.ss.wm{
+  background-image:url(/img/ss_whittaker.jpg);
+}
+li div.ss.cycle{
+  background-image:url(/img/ss_cycle.jpg);
+}
+li div.ss.rn{
+  background-image:url(/img/ss_rn.jpg);
+}
+li div.ss.stusser{
+  background-image:url(/img/ss_stusser.jpg);
+}
+article.portfolio ul li.highlight{
+  width:650px;
+}
+article.portfolio ul li.highlight div.ss{
+  width:650px;
+  height:250px;
+}

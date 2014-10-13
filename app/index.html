@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <title>Redcedar</title>
   <meta name="viewport" content="width=device-width">
-   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body data-ng-controller="mainController">
@@ -29,19 +31,19 @@
         <div class="right">
           <a href="/#/logs" data-ng-class="{active:isActive('/logs')}">Logs</a>
           <a href="/#/portfolio" data-ng-class="{active:isActive('/portfolio')}">Portfolio</a>
-          <a href="/#/etc" data-ng-class="{active:isActive('/etc')}">Etc</a>
+          <a href="/#/etc" data-ng-class="{active:isActive('/etc')}">Etc.</a>
         </div>
       </nav>
       <div id="sub-nav">
         <div data-ng-show="isActive('/')">
           <h2 class="left">Home</h2>
-          <span>Welcome!</span>
+          <a href="/#/etc">Contact</a>
         </div>
         <div data-ng-show="isActive('/logs')">
           <h2 class="left">The Logs</h2>
-          <a href="">Whiteboard</a>
-          <a href="">Reviews</a>
-          <a href="">Tutorials</a>
+          <a data-ng-click="setFocus('whiteboard')">Whiteboard</a>
+          <a data-ng-click="setFocus('review')">Reviews</a>
+          <a data-ng-click="setFocus('tutorial')">Tutorials</a>
         </div>
         <div data-ng-show="isActive('/portfolio')">
           <h2 class="left">My Portfolio</h2>
@@ -49,7 +51,7 @@
           <a href="">Mean</a>
         </div>
         <div data-ng-show="isActive('/etc')">
-          <h2 class="left">&amp;c.</h2>
+          <h2 class="left">Etc.</h2>
           <a href="">Contact</a>
           <a href="">Resume</a>
         </div>

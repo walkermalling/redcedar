@@ -37,6 +37,13 @@ header, main, footer{
       bottom:36px; left:20px;
       text-align:left; width:49%;
     }
+    @media only screen and (max-width: 649px){
+      nav .left{
+        position:relative;
+        width:auto;
+        left:0px;
+      }
+    }
       nav h1{
         font-size:3em;
       }
@@ -49,19 +56,18 @@ header, main, footer{
         h1 span.s7{ color:#E67670;}
         h1 span.s8{ color:#F26C66;}
 
-/*      header.logs nav h1 span.s1{color:#C49492;}
-      header.logs nav h1 span.s2{color:#C49492;}
-      header.logs nav h1 span.s3{color:#C49492;}
-      header.logs nav h1 span.s4{color:#C49492;}
-      header.logs nav h1 span.s5{color:#C49492;}
-      header.logs nav h1 span.s6{color:#DD7D78;}
-      header.logs nav h1 span.s7{color:#E67670;}
-      header.logs nav h1 span.s8{color:#DD7D78;}*/
-
     nav .right{
       position:absolute;
       bottom:36px; right:20px;
       text-align:right; width:50%;
+    }
+    @media only screen and (max-width: 649px){
+      nav .right{
+        position:relative;
+        width:auto;
+        text-align:left;
+        bottom:auto; left:auto;
+      }
     }
     nav .right > a {
         display:inline-block;
@@ -69,11 +75,11 @@ header, main, footer{
         font-size:1.2em;
         border-radius: 2px 2px 0 0;
       }
-        nav .right > a:last-child{
-          padding-right:0;
-        }
-        nav .right > a.active{
-          color:#fff;
+        nav .right > a:last-child{ padding-right:0; }
+        nav .right > a.active{ color:#fff; }
+        @media only screen and (max-width: 649px){
+          /*nav .right > a:last-child{ padding-left:0; }
+          nav .right > a.active{ color:#fff; }*/
         }
     
     

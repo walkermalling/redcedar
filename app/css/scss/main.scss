@@ -2,6 +2,7 @@ main{
   padding:3em 0;
   background: #363432;
 }
+
   main h2{
     color:#000;
     font-size:2em;
@@ -16,8 +17,16 @@ main{
   }
 
   main article{
-    width:48em;
+    max-width:650px;
     padding:.2em 0 1em 0;
+
+  }
+
+  @media only screen and (max-width : 649em){
+    main article{
+      width:100%;
+      min-width:320px;
+    }
   }
     
     article h3 {
@@ -34,6 +43,47 @@ main{
     article ul li{
       padding-left:15px;
     }
+      article ul.inline{
+        margin-bottom:30px;
+      }
+      article ul.inline li{
+        float:left;
+        display:block;
+        width:140px;
+        height:128px;
+        margin:20px 20px 0 0;
+        padding:0;
+        line-height: 128px;
+        text-align: center;
+      }
+        ul.inline li a,
+        ul.inline li label{
+          display:block;
+        }
+        ul.inline li label{
+          padding:0 0 10px 0;
+        }
+        li.git{
+          background:url(/img/icon_github.png);
+          background-position:center;
+          background-repeat:no-repeat;
+        }
+        li.email{
+          background:url(/img/icon_email.png);
+          background-position:center;
+          background-repeat:no-repeat;
+        }
+        li.tw{
+          background:url(/img/icon_twitter.png);
+          background-position:center;
+          background-repeat:no-repeat;
+        }
+        li.li{
+          background:url(/img/icon_linkedin.png);
+          background-position:center;
+          background-repeat:no-repeat;
+        }
+        
     article p{
       line-height:1.5em;
       padding:.45em 0;
@@ -50,6 +100,7 @@ main{
     }
     article a{
       color:#DD7D78;
+      color:#B3A3A2;
     }
     article a:hover{
       color:#F26C66;
