@@ -98,6 +98,9 @@ header, main, footer{
           display:inline-block;
           padding-left:30px;
         }
+          #sub-nav a.active{
+            color:#fff;
+          }
       
       header #scrim{
         position:absolute;

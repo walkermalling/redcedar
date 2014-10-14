@@ -22,7 +22,11 @@ require('./js/controllers/logs-controller')(redcedar);
 require('./js/controllers/portfolio-controller')(redcedar);
 require('./js/controllers/etc-controller')(redcedar);
 
+require('./components/navigation/navigation-controller')(redcedar);
+
 // Directives
+
+require('./components/navigation/navigation-directive')(redcedar);
 
 // Routes
 

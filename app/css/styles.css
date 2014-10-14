@@ -1,3 +1,5 @@
+/* tried #363432, #444240*/
+/* highlight */
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   border: 0;
@@ -126,13 +128,11 @@ pre[class*="language-"] {
 .token a {
   color: inherit; }
 
-/*  peach: f0b49e;  cream: e5fcc2;  sea: 7bbec4;  pop-orange: f26c66;
-  pop-green: 9de0ad;  charcoal: 323131;  brown: 594f4f; */
 html {
   height: 100%;
   background: #252523;
-  color: #eeeeee;
-  font-family: 'Roboto', sans-serif;
+  color: #f7efef;
+  font-family: "Roboto", sans-serif, sans-serif;
   font-weight: 100;
   font-size: .95em; }
 
@@ -176,11 +176,11 @@ a:hover {
 
 main {
   padding: 3em 0;
-  background: #363432; }
+  background: #3d3b3a; }
 
 main h2 {
   color: #000;
-  font-size: 2em;
+  font-size: 2.8em;
   font-weight: 300;
   padding: 1em 0; }
 
@@ -194,7 +194,7 @@ main article {
   max-width: 650px;
   padding: .2em 0 1em 0; }
 
-@media only screen and (max-width: 649em) {
+@media only screen and (max-width: 649px) {
   main article {
     width: 100%;
     min-width: 320px; } }
@@ -256,7 +256,8 @@ article p {
   line-height: 1.5em;
   padding: .45em 0;
   font-size: 1.2em;
-  color: #FDEDEC; }
+  color: #FDEDEC;
+  color: #f7efef; }
 
 article strong {
   color: #dbcccc;
@@ -274,20 +275,30 @@ article a:hover {
   color: #F26C66; }
 
 article pre.language-javascript {
-  background: #363432;
+  background: #3d3b3a;
   padding: 0; }
+
+article.portfolio {
+  max-width: 100%; }
 
 article.portfolio ul li {
   float: left;
   display: block;
   padding: 0 0 30px 0;
-  width: 300px;
+  width: 45%;
   overflow: hidden; }
 
 article.portfolio ul li:nth-child(odd) {
   clear: left;
-  padding-right: 50px; }
+  padding-right: 9%; }
 
+@media only screen and (max-width: 649px) {
+  article.portfolio ul li {
+    width: 100%; }
+
+  article.portfolio ul li:nth-child(odd) {
+    clear: both;
+    padding-right: 0; } }
 article.portfolio ul li a {
   font-size: 1.4em; }
 
@@ -301,7 +312,7 @@ article.portfolio span.tech {
 
 li div.ss {
   box-sizing: border-box;
-  width: 300px;
+  width: 100%;
   height: 115px;
   background-position: top left;
   background-size: 100%;
@@ -328,10 +339,10 @@ li div.ss.stusser {
   background-image: url(/img/ss_stusser.jpg); }
 
 article.portfolio ul li.highlight {
-  width: 650px; }
+  width: 100%; }
 
 article.portfolio ul li.highlight div.ss {
-  width: 650px;
+  width: 100%;
   height: 250px; }
 
 header, main, footer {
@@ -449,6 +460,9 @@ nav .right > a.active {
 #sub-nav a {
   display: inline-block;
   padding-left: 30px; }
+
+#sub-nav a.active {
+  color: #fff; }
 
 header #scrim {
   position: absolute;

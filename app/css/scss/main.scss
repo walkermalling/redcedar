@@ -1,11 +1,11 @@
 main{
   padding:3em 0;
-  background: #363432;
+  background: $mainBackground;
 }
 
   main h2{
     color:#000;
-    font-size:2em;
+    font-size:2.8em;
     font-weight:300;
     padding:1em 0;
   }
@@ -15,14 +15,12 @@ main{
   main h2 a:hover{
     color:#222;
   }
-
   main article{
     max-width:650px;
     padding:.2em 0 1em 0;
-
   }
 
-  @media only screen and (max-width : 649em){
+  @media only screen and (max-width : 649px){
     main article{
       width:100%;
       min-width:320px;
@@ -89,6 +87,7 @@ main{
       padding:.45em 0;
       font-size:1.2em;
       color:#FDEDEC;
+      color:$baseFontColor;
     }
     article strong{
       color:#dbcccc;
@@ -106,7 +105,7 @@ main{
       color:#F26C66;
     }
     article pre.language-javascript{
-      background: #363432;
+      background: $mainBackground;
       padding:0;
     }
 

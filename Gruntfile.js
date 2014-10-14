@@ -11,6 +11,7 @@ module.exports = function(grunt) {
 
   var allJavaScriptFilePaths = [
     'app/js/**/*.js',
+    'app/components/**/*.js',
     'server.js'
   ];
 
@@ -33,7 +34,7 @@ module.exports = function(grunt) {
           'img/*.png',
           'img/*.ico',
           'views/**/*.html',
-          'templates/**/*.html'
+          'components/**/*.html'
         ],
         dest: 'build/',
         filter: 'isFile'
@@ -55,6 +56,7 @@ module.exports = function(grunt) {
         },
         src: [
           'app/js/**/*.js',
+          'app/components/**/*.js',
           'app/app.js'
         ],
         dest: 'build/scripts.js'
@@ -82,6 +84,8 @@ module.exports = function(grunt) {
       express: {
         files: [
           'app/js/**/*.js',
+          'app/components/**/*.js',
+          'app/components/**/*.html',
           'app/app.js',
           'app/index.html',
           'app/views/**/*.html',

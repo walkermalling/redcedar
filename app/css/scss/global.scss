@@ -1,38 +1,38 @@
-/*  peach: f0b49e;  cream: e5fcc2;  sea: 7bbec4;  pop-orange: f26c66;
-  pop-green: 9de0ad;  charcoal: 323131;  brown: 594f4f; */
-  html{
-    height:100%;background:#252523;color:#eeeeee;
-    font-family:'Roboto', sans-serif; font-weight:100;
-    font-size:.95em;
-  }
-  body{min-width:650px;box-sizing:border-box;};
-  @media only screen and (max-width: 649px){
-    body{
-      width:100%;
-      min-width:320px;
-    }
-  }
-  div{position: relative;}
-  a{
-    color:#FDEDEC; 
-    color:#dbcccc; 
-    color:#B3A3A2;
-    cursor:pointer;
-    text-decoration: none;
-  }
-  ul li p {font-size:100%;}
-  span.code {
-    font-family: 'Courier New', Courier, monospace;
-    color:#fff;
-    background:#2b2b2b;
-    border-radius:2px;
-  }
-
-  a:hover{color:#fff;}
-
-  .clear{
+html{
+  height:100%;
+  background:#252523;
+  color:$baseFontColor;
+  font-family: $font, sans-serif; font-weight:100;
+  font-size:.95em;
+}
+body{min-width:650px;box-sizing:border-box;};
+@media only screen and (max-width: 649px){
+  body{
     width:100%;
-    height:0;
-    border:0; margin:0; padding:0;
-    clear:both;
+    min-width:320px;
   }
+}
+div{position: relative;}
+a{
+  color:#FDEDEC; 
+  color:#dbcccc; 
+  color:#B3A3A2;
+  cursor:pointer;
+  text-decoration: none;
+}
+ul li p {font-size:100%;}
+span.code {
+  font-family: 'Courier New', Courier, monospace;
+  color:#fff;
+  background:#2b2b2b;
+  border-radius:2px;
+}
+
+a:hover{color:#fff;}
+
+.clear{
+  width:100%;
+  height:0;
+  border:0; margin:0; padding:0;
+  clear:both;
+}

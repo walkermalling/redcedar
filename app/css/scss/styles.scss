@@ -1,3 +1,11 @@
+$font: 'Roboto', sans-serif;
+$baseFontColor: #f7efef;
+$mainBackground: #3d3b3a; /* tried #363432, #444240*/
+
+/* highlight */
+$salmon: #f26c66;
+
+
 @import "reset";
 @import "prism";
 @import "global";
