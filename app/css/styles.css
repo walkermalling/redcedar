@@ -6,6 +6,7 @@
 
 */
 /* tried #363432, #444240 */
+/* #f7efef */
 /* #FDEDEC, #B3A3A2, #dbcccc, #CD8D89 */
 /* highlights */
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
@@ -139,7 +140,7 @@ pre[class*="language-"] {
 html {
   height: 100%;
   background: #252523;
-  color: #f7efef;
+  color: #fff;
   font-family: "Roboto", sans-serif, sans-serif;
   font-weight: 100;
   font-size: .95em; }
@@ -156,7 +157,7 @@ div {
   position: relative; }
 
 a {
-  color: #dbcccc;
+  color: #FDEDEC;
   cursor: pointer;
   text-decoration: none; }
 
@@ -185,7 +186,7 @@ main {
   background: #3d3b3a; }
 
 main h2 {
-  color: #dbcccc;
+  color: #FDEDEC;
   color: #000;
   font-size: 2.8em;
   font-weight: 400;
@@ -264,8 +265,7 @@ article p {
   line-height: 1.5em;
   padding: .45em 0;
   font-size: 1.2em;
-  color: #FDEDEC;
-  color: #f7efef; }
+  color: #fff; }
 
 article strong {
   color: #dbcccc;
@@ -276,10 +276,10 @@ article span.date {
   color: #000; }
 
 article a {
-  color: #DD7D78; }
+  color: #f26c66; }
 
 article a:hover {
-  color: #F26C66; }
+  color: #dd7d78; }
 
 article pre.language-javascript {
   background: #3d3b3a;
@@ -451,7 +451,7 @@ nav .right > a:last-child {
   padding-right: 0; }
 
 nav .right > a.active {
-  color: #fff; }
+  color: #dd7d78; }
 
 @media only screen and (max-width: 649px) {
   /*nav .right > a:last-child{ padding-left:0; }

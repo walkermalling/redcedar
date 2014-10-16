@@ -88,7 +88,6 @@ main{
       line-height:1.5em;
       padding:.45em 0;
       font-size:1.2em;
-      color:#FDEDEC;
       color:$baseFontColor;
     }
     article strong{
@@ -103,7 +102,7 @@ main{
       color:$linkColor;
     }
     article a:hover{
-      color:#F26C66;
+      color:$linkHover;
     }
     article pre.language-javascript{
       background: $mainBackground;
