@@ -21,27 +21,32 @@
         </div>
       </nav>
       <div id="sub-nav">
+
         <div data-ng-show="isActive('/')">
           <h2 class="left">Home</h2>
           <a href="/#/etc?focus=contact" data-ng-class="{active:hasFocus('contact')}">Contact</a>
         </div>
+
         <div data-ng-show="isActive('/logs')">
           <h2 class="left">The Logs</h2>
           <a data-ng-click="setFocus('whiteboard')" data-ng-class="{active:hasFocus('whiteboard')}">Whiteboard</a>
           <a data-ng-click="setFocus('review')" data-ng-class="{active:hasFocus('review')}">Reviews</a>
           <a data-ng-click="setFocus('tutorial')" data-ng-class="{active:hasFocus('tutorial')}">Tutorials</a>
         </div>
+
         <div data-ng-show="isActive('/portfolio')">
           <h2 class="left">My Portfolio</h2>
           <a data-ng-click="setFocus('lamp')" data-ng-class="{active:hasFocus('lamp')}">Lamp</a>
           <a data-ng-click="setFocus('mean')" data-ng-class="{active:hasFocus('mean')}">Mean</a>
         </div>
+
         <div data-ng-show="isActive('/etc')">
           <h2 class="left">Etc.</h2>
           <a data-ng-click="setFocus('about')" data-ng-class="{active:hasFocus('about')}">About Me</a>
           <a data-ng-click="setFocus('contact')" data-ng-class="{active:hasFocus('contact')}">Contact</a>
           <a data-ng-click="setFocus('resume')" data-ng-class="{active:hasFocus('resume')}">Resume</a>
         </div>
+        
       </div>
     </section>
     <div id="scrim"></div>

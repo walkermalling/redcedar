@@ -82,10 +82,6 @@ header, main, footer{
         nav .right > a.active{ 
           color:$navLinkHover; 
         }
-        @media only screen and (max-width: 649px){
-          /*nav .right > a:last-child{ padding-left:0; }
-          nav .right > a.active{ color:#fff; }*/
-        }
     
     
       #sub-nav{
@@ -99,6 +95,7 @@ header, main, footer{
           display:inline;
           float:left;
         }
+        
         #sub-nav a {
           display:inline-block;
           padding-left:30px;
@@ -106,6 +103,20 @@ header, main, footer{
           #sub-nav a.active{
             color:#fff;
           }
+
+        @media only screen and (max-width: 649px){
+          #sub-nav h2.left{
+            display:none;
+          }
+          #sub-nav{
+            text-align:left;
+          }
+          #sub-nav a {
+            display:inline-block;
+            padding-left:0px;
+            padding-right:15px;
+          }
+        }
       
       header #scrim{
         position:absolute;

@@ -461,9 +461,6 @@ nav .right > a:last-child {
 nav .right > a.active {
   color: #dd7d78; }
 
-@media only screen and (max-width: 649px) {
-  /*nav .right > a:last-child{ padding-left:0; }
-  nav .right > a.active{ color:#fff; }*/ }
 #sub-nav {
   padding: 0;
   text-align: right;
@@ -482,6 +479,17 @@ nav .right > a.active {
 #sub-nav a.active {
   color: #fff; }
 
+@media only screen and (max-width: 649px) {
+  #sub-nav h2.left {
+    display: none; }
+
+  #sub-nav {
+    text-align: left; }
+
+  #sub-nav a {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 15px; } }
 header #scrim {
   position: absolute;
   bottom: 0;
