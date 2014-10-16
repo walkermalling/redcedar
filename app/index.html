@@ -4,58 +4,15 @@
   <meta charset="UTF-8">
   <title>Redcedar</title>
   <meta name="viewport" content="width=device-width">
-   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body data-ng-controller="mainController">
 
   <header class="{{ page }}">
-    <section>
-      <nav>
-        <div class="left">
-          <h1>
-            <a href="/" data-ng-class="{active:isActive('/')}">
-              <span class="s1">R</span>
-              <span class="s2">e</span>
-              <span class="s3">d</span>
-              <span class="s8">c</span>
-              <span class="s7">e</span>
-              <span class="s6">d</span>
-              <span class="s4">a</span>
-              <span class="s3">r</span>
-            </a>
-          </h1>
-        </div>
-        <div class="right">
-          <a href="/#/logs" data-ng-class="{active:isActive('/logs')}">Logs</a>
-          <a href="/#/portfolio" data-ng-class="{active:isActive('/portfolio')}">Portfolio</a>
-          <a href="/#/etc" data-ng-class="{active:isActive('/etc')}">Etc</a>
-        </div>
-      </nav>
-      <div id="sub-nav">
-        <div data-ng-show="isActive('/')">
-          <h2 class="left">Home</h2>
-          <span>Welcome!</span>
-        </div>
-        <div data-ng-show="isActive('/logs')">
-          <h2 class="left">The Logs</h2>
-          <a href="">Whiteboard</a>
-          <a href="">Reviews</a>
-          <a href="">Tutorials</a>
-        </div>
-        <div data-ng-show="isActive('/portfolio')">
-          <h2 class="left">My Portfolio</h2>
-          <a href="">Lamp</a>
-          <a href="">Mean</a>
-        </div>
-        <div data-ng-show="isActive('/etc')">
-          <h2 class="left">&amp;c.</h2>
-          <a href="">Contact</a>
-          <a href="">Resume</a>
-        </div>
-      </div>
-    </section>
-    <div id="scrim"></div>
+    <navigation></navigation>
   </header>
 
   <div data-ng-view></div>

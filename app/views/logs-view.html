@@ -1,11 +1,18 @@
 <main>
-  
-  <section>
-    <h2 data-ng-click="tutorial = !tutorial">
-      <a>Tutorials <span data-ng-show="!tutorial">...</span></a>
-    </h2>
-    <article data-ng-show="tutorial">
-      <h3>Data Driven Documents, a.k.a, D3</h3>
+
+  <section id="review" data-ng-show="hasFocus('review')">
+    <h2>Reviews</h2>
+    <article>
+      <h3>Sextant Analytics</h3>
+      <p>See the presentation slides <a href="https://docs.google.com/presentation/d/1_y6DDlQ-2KdTkDizVKqseX8M0JeOF3DFDON7KxO3EWo/edit?usp=sharing">here</a>.</p>
+      <p>Since presenting there have been several updates, including the implementation of <span class="tech">socket.io</span>.</p>
+    </article>
+  </section>
+
+  <section id="tutorial" data-ng-show="hasFocus('tutorial')">
+    <h2>Tutorials</h2>
+    <article>
+      <h3>Data Driven Documents, a.k.a, D3 <span class="date">September 18th, 2014</span></h3>
       <p>I’ve had a few run-ins with the d3.js library recently. It has been very rewarding, but what they say about D3 is true: there is a bit of a learning curve.</p>
       <p>Here's is how I would approach learning it, if I had it to do over again.</p>
       <h4>The Best Tutorials</h4>
@@ -51,14 +58,12 @@
     </article>
   </section>
 
-  <section>
-    <h2 data-ng-click="whiteboard = !whiteboard">
-      <a>Whiteboard <span data-ng-show="!whiteboard">...</span></a>
-    </h2>
-    <article data-ng-show="whiteboard">
-      <h3>The Staris Combo Problem</h3>
-      <p>I really enjoyed this one.  The problem is as follows.</p>
-      <p>A child is running up a staircase with n steps, and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count how many possibilities the child can run up the stairs</p>
+  <section id="whiteboard" data-ng-show="hasFocus('whiteboard')">
+    <h2>Whiteboard</h2>
+    <article>
+      <h3>The Staris Combo Problem <span class="date">September 9th, 2014</span></h3>
+      <p>I really enjoyed this one.  The problem is as follows:</p>
+      <p>A child is running up a staircase with n steps, and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count how many ways the child can run up the stairs.</p>
       <p>Here is my basic solution.  You can find it <a href="https://github.com/walkermalling/whiteboard/tree/master/src/stairs-combo">here</a>, with tests.</p>
       <pre>
         <code class="language-javascript">
@@ -91,17 +96,9 @@
           };
         </code>
       </pre>
+      <p>I am not an optimization expert, but I threw these solutions <a href="http://jsperf.com/stair-combo-problem">up on jsperf</a> and the book soution was 16% slower than mine in Chrome.  (Of course, it's being tested in a browser, and I had to translate the solution from Java to JavaScript...)  I'm guessing their solution is slower because it is relying purely on recursion where I am using a combination of recursion and for-loop.  To solve for <span class="code">n = 10</span>, the book solution must recurse 978 times compared to 325 times with my solution. </p>
     </article>
   </section>
 
-  <section>
-    <h2 data-ng-click="review = !review">
-      <a>Reviews <span data-ng-show="!review">...</span></a>
-    </h2>
-    <article data-ng-show="review">
-      <h3>Sextant Analytics</h3>
-      <p>A review (or post-game, if you will) of my final project at CodeFellows.</p>
-      <p>Coming soon!</p>
-    </article>
-  </section>
+
 </main>

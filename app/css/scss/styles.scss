@@ -1,6 +1,31 @@
+/*
+
+#dbcccc
+#FDEDEC
+#B3A3A2
+
+*/
+
+
+$headerFooterBackground: #252523;
+$mainBackground: #3d3b3a; /* tried #363432, #444240 */
+
+$font: 'Roboto', sans-serif;
+$baseFontColor: #fff; /* #f7efef */;
+
+$navLinkColor:#FDEDEC;
+$navLinkHover: #dd7d78;
+$linkColor: #f26c66; /* #FDEDEC, #B3A3A2, #dbcccc, #CD8D89 */
+$linkHover: #dd7d78;
+
+/* highlights */
+$salmon: #f26c66;
+
+
 @import "reset";
 @import "prism";
 @import "global";
 @import "main";
+@import "portfolio";
 @import "header";
 @import "footer";
