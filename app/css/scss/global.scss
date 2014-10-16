@@ -1,6 +1,6 @@
 html{
   height:100%;
-  background:#252523;
+  background: $headerFooterBackground;
   color:$baseFontColor;
   font-family: $font, sans-serif; font-weight:100;
   font-size:.95em;
@@ -14,9 +14,7 @@ body{min-width:650px;box-sizing:border-box;};
 }
 div{position: relative;}
 a{
-  color:#FDEDEC; 
-  color:#dbcccc; 
-  color:#B3A3A2;
+  color: $navLinkColor;
   cursor:pointer;
   text-decoration: none;
 }

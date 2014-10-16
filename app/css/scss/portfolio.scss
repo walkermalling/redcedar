@@ -12,6 +12,7 @@ article.portfolio ul li:nth-child(odd){
   clear:left;
   padding-right:9%;
 }
+
 @media only screen and (max-width : 649px){
   article.portfolio ul li{
     width:100%;
@@ -69,4 +70,9 @@ article.portfolio ul li.highlight{
 article.portfolio ul li.highlight div.ss{
   width:100%;
   height:250px;
+}
+@media only screen and (max-width : 649px){
+  article.portfolio ul li.highlight div.ss{
+    height:115px;
+  }
 }

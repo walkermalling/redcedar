@@ -12,12 +12,13 @@ module.exports = function(app) {
       };
 
       $scope.setFocus = function(id){
-        console.log(id);
         $rootScope.focus = id;
+        if( document.getElementById(id) ){
+          document.getElementById(id).scrollIntoView(true);
+        }
       };
 
       $scope.hasFocus = function(id){
-
         return $rootScope.focus === id;
       };
 
