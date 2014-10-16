@@ -149,7 +149,8 @@ body {
   min-width: 650px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+  display: block; }
 
 @media only screen and (max-width: 649px) {
   body {
@@ -367,6 +368,7 @@ section {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  display: block;
   padding: 0 20px;
   width: 100%;
   max-width: 960px;
