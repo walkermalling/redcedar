@@ -208,7 +208,7 @@ main article {
 @media only screen and (max-width: 649px) {
   main article {
     width: 100%;
-    min-width: 320px; } }
+    overflow: hidden; } }
 article h3 {
   color: #D58581;
   padding: .5em 0;
