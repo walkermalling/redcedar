@@ -4,6 +4,8 @@ header, main, footer{
   }
   section{
     box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
     padding:0 20px;
     width:100%;
     max-width:960px;
