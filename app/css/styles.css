@@ -286,6 +286,14 @@ article a {
 article a:hover {
   color: #dd7d78; }
 
+article a.call-to-action {
+  display: inline-block;
+  padding: 20px;
+  background: #f26c66;
+  color: white;
+  font-size: 2em;
+  margin: 1em 0; }
+
 article pre.language-javascript {
   background: #3d3b3a;
   padding: 0; }

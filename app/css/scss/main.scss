@@ -106,6 +106,14 @@ main{
     article a:hover{
       color:$linkHover;
     }
+    article a.call-to-action{
+      display:inline-block;
+      padding:20px;
+      background:$salmon;
+      color:white;
+      font-size:2em;
+      margin:1em 0;
+    }
     article pre.language-javascript{
       background: $mainBackground;
       padding:0;
